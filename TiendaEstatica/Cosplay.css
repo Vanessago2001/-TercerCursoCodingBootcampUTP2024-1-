@@ -8,9 +8,10 @@ body {
 
 /* Estilos para todas las imágenes */
 img {
-    padding: 1%; /* Espaciado alrededor de la imagen */
-    width: 300px; /* Ancho de la imagen */
-    left: 100px; /* Posiciona la imagen */
+    padding: 30% 3% ; /* Espaciado alrededor de la imagen */
+    width: 20vw; /* Ancho de la imagen */
+    height: 30vw;
+    left: 5%; /* Posiciona la imagen */
     border-radius: 20%; /* Bordes redondeados */
     position:static;
 }
@@ -41,6 +42,9 @@ input {
     background-color: black; /* Color de fondo */
     color: white; /* Color del texto */
     margin-left: 10px; /* Margen izquierdo */
+    position: fixed;
+    z-index: 1;
+    width: 95vw;
 }
 
 /* Estilos para los enlaces dentro del encabezado */
@@ -87,7 +91,7 @@ input {
     position: fixed; /* Posición fija */
     top: 50%; /* Distancia desde la parte superior */
     transform: translateY(-50%); /* Centra verticalmente */
-    right: 20px; /* Distancia desde la derecha */
+    right: 2%; /* Distancia desde la derecha */
 }
 
 .contenedor-login {
