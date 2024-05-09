@@ -1,4 +1,3 @@
-
 body {
     font-family: cursive;
     background-image: url(img/estrellas-bg.png);
@@ -27,24 +26,15 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    margin-top: 100px;
-}
-.coco{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
 }
 .fondo-opaco {
     background-color: black;
     position: absolute;
     width: 100%;
-    height: 200vh;
+    height: 304%;
     margin: 0;
     padding: 0;
-    opacity: 0.8;
+    opacity: 0.6;
     z-index: -1;
 }
 
@@ -65,18 +55,12 @@ body {
     border-color: orange;
     border-radius: 1%;
     border-width: 0.5vw;
-    height: 30vw;
-    width: 80vw;
-    overflow: scroll;
-}
-.pesebre-detras {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 60%;
 }
 
 .sabias-que {
     width: 50%;
-    height: 90%;
     align-items: center;
     text-align: center;
     background:
@@ -84,7 +68,6 @@ body {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    font-size: 10px;
 }
 
 .imagenes-arriba,
@@ -94,33 +77,14 @@ body {
 }
 
 .imagenes-arriba img {
-    margin: 1vw;
-    width: 2vw;
+    margin: 3vw;
+    width: 3vw;
 }
 
 .imagenes-abajo img {
-    width: 5%;
+    width: 7%;
+    margin: 0 3% 3% 3%;
     animation: rotate 2s linear infinite;
-    margin: 0;
-}
-.compartir-abajo {
-    display: flex;
-    justify-content: start;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(37, 98, 37);
-}
-.compartir-abajo p{
-    color: white;
-    font-size: 2vw;
-}
-.compartir-abajo a{
-    margin: 0;
-    padding: 0;
-    width: 10%;
-}
-.compartir-abajo img{
-    width: 60%;
 }
 @keyframes rotate {
     0% {
@@ -185,12 +149,58 @@ body {
     width: 35%!important;
     z-index: 1;
 }
+@media screen and (min-width: 1000px) {
+.caratulas-pesebre{
+    height: 55%;
+}
+.contenedor-final{
+    font-size: 1vw;
+    margin-top: 200px;
+    height: auto;
+}
+.sabias-que{
+    justify-content: center;
+    
+}
 
+
+
+}
+@media screen and (max-width: 1000px) {
+    .imagenes-arriba img {
+        display: none;
+    }
+    
+}
 .texto1-sabias-que {
     color: red;
     font-weight: bold;
     font-size: 3dvh;
 }
+.contenedor-final .texto1-sabias-que {
+    color: red;
+    font-weight: bold;
+    font-size: 3vw;
+}
+.contenedor-final .fondo-opaco{
+    height: 500%;
+}
+.caratulas-pesebre{
+    height: 55%;
+}
+.contenedor-final{
+    font-size: 2vw;
+    margin-top: 200px;
+    height: auto;
+}
+.sabias-que{
+    justify-content: center;
+    
+}
+.caratulas-pesebre{
+    height: 36%;
+}
+
 .caida{
     animation-name: caida;
     animation-duration: 3s;
@@ -267,7 +277,25 @@ body {
     transform: translateY(4px);
     box-shadow: 0 0 0 orange;
 }
-
+.compartir-abajo {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(37, 98, 37);
+}
+.compartir-abajo p{
+    color: white;
+    font-size: 2vw;
+}
+.compartir-abajo a{
+    margin: 0;
+    padding: 0;
+    width: 10%;
+}
+.compartir-abajo img{
+    width: 60%;
+}
 .texto {
     margin: 0;
     padding: 0;
@@ -276,6 +304,9 @@ body {
     width: 45%;
 }
 
+.pesebre-detras {
+    height: 100%;
+}
 
 .pesebre {
     width: 50%;
@@ -357,6 +388,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     background-color: transparent;
+    margin-left: 2%;
 }
 
 .carta-inner {
@@ -411,7 +443,7 @@ header {
     background-color: black;
     opacity: 0.6;
     width: 100%;
-    height: 200%;
+    height: 202%;
 }
 
 .welcome2 {
@@ -466,8 +498,10 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    position: relative;
+    bottom: 0;
+    position: fixed;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 footer .logo {
@@ -490,3 +524,4 @@ footer .logo img {
 .hidden{
     display: none;
 }
+

@@ -73,9 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           // Espera un momento antes de evaluar si las cartas son iguales
           setTimeout(function () {
-            if (
-              primeraCarta.getAttribute("data-valor") === segundaCarta.getAttribute("data-valor")
-            ) {
+            if (primeraCarta.getAttribute("data-valor") === segundaCarta.getAttribute("data-valor")) {
               console.log("Encontraste", valorCarta);
               audioCorrecta.play();
               parejasEncontradas++;
