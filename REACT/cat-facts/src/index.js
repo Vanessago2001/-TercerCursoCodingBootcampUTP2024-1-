@@ -34,7 +34,7 @@ function App() {
       <div className="cat-fact">
         <p>{catFact}</p>
       </div>
-      <button onClick={obtenerNuevoHechoYImagen}>Obtener hecho y imagen</button>
+      <button onClick={obtenerNuevoHechoYImagen}>Obtener hecho e imagen</button>
     </div>
   );
 }

@@ -1,0 +1,131 @@
+/* Estilos para el fondo del body */
+body {
+    background-image: url(fondo.jpg); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+/* Estilos para todas las imágenes */
+img {
+    padding: 30% 3% ; /* Espaciado alrededor de la imagen */
+    width: 20vw; /* Ancho de la imagen */
+    height: 30vw;
+    left: 5%; /* Posiciona la imagen */
+    border-radius: 20%; /* Bordes redondeados */
+    position:static;
+}
+
+/* Estilos para la clase 'cosplay' */
+.cosplay {
+    width: 120%; /* Ancho del elemento */
+    padding: 3%; /* Espaciado interno */
+}
+
+/* Estilos para los elementos 'span' */
+span {
+    color: rgb(255, 255, 255); /* Color del texto */
+}
+
+/* Estilos para los elementos 'input' */
+input {
+    display: flex; /* Establece el modelo de caja como flex */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    display: flex; /* Establece el modelo de caja como flex */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: black; /* Color de fondo */
+    color: white; /* Color del texto */
+    margin-left: 10px; /* Margen izquierdo */
+    position: fixed;
+    z-index: 1;
+    width: 95vw;
+}
+
+/* Estilos para los enlaces dentro del encabezado */
+.encabezado a {
+    color: inherit; /* Hereda el color del texto */
+    margin-left: 10px;
+}
+
+/* Estilos para los enlaces dentro del encabezado cuando se les hace hover */
+.encabezado a:hover {
+    text-decoration: none; /* Elimina la decoración del enlace cuando se hace hover */
+}
+.encabezado .login {
+    margin-left: 70%; /* Empuja el enlace 'Login' hacia la derecha */
+}
+
+/* Estilos para los párrafos dentro de la descripción */
+.descripcion p {
+    color: rgb(255, 255, 255); /* Color del texto */
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+/* Estilos para los elementos de clase 'contenedor' */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define cuatro columnas de igual tamaño */
+    grid-gap: 2%; /* Espacio entre las celdas */
+    grid-auto-flow: row; /* Indica que el contenido debe fluir de arriba hacia abajo */
+    padding: 40px 20px;
+}
+
+/* Estilos para los elementos de imagen dentro del contenedor */
+.contenedor img {
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+}
+
+/* Estilos para el rectángulo */
+.rectangulo {
+    color: azure; /* Color del texto */
+    font-size: x-large; /* Tamaño de fuente */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Familia de fuentes */
+    width: 50%; /* Ancho del elemento */
+    max-width: 50%; /* Ancho máximo */
+    position: fixed; /* Posición fija */
+    top: 50%; /* Distancia desde la parte superior */
+    transform: translateY(-50%); /* Centra verticalmente */
+    right: 2%; /* Distancia desde la derecha */
+}
+
+.contenedor-login {
+    width: 60%; /* Ancho del elemento */
+    max-width: 50%; /* Ancho máximo */
+    margin: 7% auto; /* Margen */
+    margin-top: 2%; /* Margen superior */
+    padding: 2%; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border: 2px solid #000000; /* Borde sólido */
+    background-image: url('ruta/de/la/imagen.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    font-size: large; /* Tamaño de fuente */
+    text-align:justify; /* Alineación del texto al centro */
+}
+
+/* Estilos para los botones */
+button {
+    color: rgb(0, 87, 87); /* Color del texto */
+    border: 1%; /* Borde */
+    font-size: larger; /* Tamaño de fuente */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #000000; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para los párrafos dentro del footer */
+footer p {
+    margin: px; /* Elimina el margen predeterminado del párrafo */
+}
