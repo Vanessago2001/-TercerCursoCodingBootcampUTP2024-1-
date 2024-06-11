@@ -8,3 +8,19 @@ html,
 body {
   background-color: #1b1b32;
 }
+
+.logo {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedor-principal {
+  height: 550px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
