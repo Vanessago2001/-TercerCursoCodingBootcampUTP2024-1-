@@ -1,0 +1,53 @@
+*{
+	margin: 1%;
+	padding: 1%;
+	box-sizing: border-box;
+}
+
+
+html,
+body{
+	font-size: 18px;
+	background-color: #add6ff;
+}
+
+h1 {
+	max-width: 100%;
+	font-size: 2.5em;
+	font-family: lato, sans-serif;
+	font-weight: 700;
+	line-height: 1.1;
+	margin:2%;
+	text-align: center;
+}
+
+.App {
+	background-color: white;
+	min-height: 500px;
+	display: block;
+	border: 2px solid black;
+	padding: 10px;
+	border-bottom: 2px;
+}
+
+.titulo{
+	font-weight: bold;
+	padding: 3%;
+	border-bottom: 2px solid black;
+	justify-self: center;
+}
+
+table {
+	border-collapse: collapse;
+	width:95%;
+}
+
+th,td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: center;
+}
+
+th {
+	background-color: lightgray;
+}
