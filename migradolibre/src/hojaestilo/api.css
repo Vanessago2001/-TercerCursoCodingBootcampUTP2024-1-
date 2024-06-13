@@ -1,0 +1,36 @@
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 2%;
+}
+
+.contenedor-producto {
+  padding: 1%; 
+  width: 15%; 
+  height: 15%;
+  margin-bottom: 2%; 
+  border-radius: 20px;
+  background-color: #bfbfec;
+  color: rgb(0, 0, 0);
+  border: 2px solid white;
+  cursor: pointer;
+  user-select: none;
+}
+.contenedor-producto:hover{
+  background-color: rgb(169, 253, 245);
+
+}
+
+.contenedor-producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px; 
+}
+
+h4,
+h5,
+strong {
+  text-align: center;
+  background-color: #bfbfec00 !important;
+}

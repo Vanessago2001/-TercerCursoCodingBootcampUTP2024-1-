@@ -1,0 +1,22 @@
+* {
+  background-color: rgb(253, 221, 219);
+}
+
+
+
+.contendor.des{
+  height: 83px;
+  display: contents;
+  flex: 1 1;
+  justify-content:left;
+  align-items: normal;
+  font-weight: bold;
+  font-size: 38px;
+  background-color: #d6fdcd;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  border: 2px solid white;
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+}
