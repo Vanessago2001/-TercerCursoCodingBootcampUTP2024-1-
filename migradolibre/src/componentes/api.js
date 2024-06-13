@@ -19,7 +19,7 @@ function Endpoint() {
         <div className="contenedor-producto" key={producto.id}>
           <img src={producto.thumbnail} alt={producto.title} />
           <h5>{producto.title}</h5>
-          <h4>Precio: {producto.price}</h4>
+          <h4>Precio: ${producto.price}</h4>
         </div>
       ))}
     </main>

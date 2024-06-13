@@ -2,53 +2,41 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Categorias() {
+  const categoriesID = []
   const [categorias, setCategorias] = useState([]);
-  const [expandedCategories, setExpandedCategories] = useState({});
-
+  const [categoriasExpandidas, setCategoriasExpandidas] = useState({});
+  
   useEffect(() => {
-    fetch("https://api.mercadolibre.com/sites/MLA/categories")
-      .then((response) => response.json())
-      .then((data) => {
-        const formattedCategories = data.map((category) => ({
-          id: category.id,
-          name: category.name,
-          children: category.children_categories || [],
-        }));
-        setCategorias(formattedCategories);
+    fetch("https://api.mercadolibre.com/sites/MLA/search?seller_id=179571326")
+      .then((respuesta) => respuesta.json())
+      .then((data)=>{
+        data.results.map((item)=>{
+          if(!categoriesID.includes(item.category_id)){
+            categoriesID.push(item.category_id)
+          }
+        })
       })
-      .catch((error) => {
-        console.error("Error al obtener las categorías:", error);
-      });
+      .then(console.log(categoriesID))
   }, []);
+  
 
-  const toggleCategory = (categoryId) => {
-    setExpandedCategories((prev) => ({
+  const toggleCategoria = (categoriaId) => {
+    setCategoriasExpandidas((prev) => ({
       ...prev,
-      [categoryId]: !prev[categoryId]
+      [categoriaId]: !prev[categoriaId],
     }));
-  };
-
-  const renderCategory = (category) => {
-    const isExpanded = expandedCategories[category.id];
-    return (
-      <li key={category.id}>
-        <button onClick={() => toggleCategory(category.id)}>
-          {isExpanded ? "-" : "+"}
-        </button>
-        <Link to={`/${category.id}`}>{category.name}</Link>
-        {isExpanded && category.children && (
-          <ul>
-            {category.children.map((child) => renderCategory(child))}
-          </ul>
-        )}
-      </li>
-    );
   };
 
   return (
     <nav className="menu">
+      <h1>Categorías</h1>
       <ul>
-        {categorias.map((categoria) => renderCategory(categoria))}
+        {categorias.map((categoria) => 
+          <div>
+            <p>{categoria.name}</p>
+            <p>{categoria.subcategories}</p>
+          </div>
+        )}
       </ul>
     </nav>
   );

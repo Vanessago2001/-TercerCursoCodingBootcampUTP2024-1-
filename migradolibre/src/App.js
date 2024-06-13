@@ -1,20 +1,26 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./hojaestilo/api.css"
 import "./App.css"
 import Categorias from "./componentes/apicategoria"
-import Api from "../src/componentes/api";
+import Api from "./componentes/api"
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <Categorias />
-      </div>
-      <div className="App"> 
-      < Api/>
-      </div>
-    </Router>
+    <div className="contenedor">
+      <Router>
+        <div className="sidebar">
+          <Routes>
+            <Route path="/" Component={Categorias}/>
+          </Routes>
+        </div>
+        <div className="main-content">
+          <Routes>
+            <Route path="/" Component={Api}/>
+          </Routes>
+        </div>
+      </Router>
+    </div>
   );
 }
 

@@ -1,23 +1,26 @@
-.isExpanded {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    padding: 2%;
+.categorias-container {
+    width: 10%; /* Ajusta el ancho según tus necesidades */
+    height: 10%; /* Opcional: ajusta la altura según tus necesidades */
+    background-color: #f0f0f0; /* Color de fondo */
+    
   }
   
-  .contenedor-producto {
-    padding: 1%; 
-    width: 15%; 
-    height: 15%;
-    margin-bottom: 2%; 
-    border-radius: 20px;
-    background-color: #bfbfec;
-    color: rgb(0, 0, 0);
-    border: 2px solid white;
-    cursor: pointer;
-    user-select: none;
+  .menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
-  .contenedor-producto:hover{
-    background-color: rgb(169, 253, 245);
   
+  .menu li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
   }
+  
+  .menu li button {
+    margin-right: 5px; /* Espacio entre el botón y el enlace */
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333; /* Color del texto */
+  }
+  

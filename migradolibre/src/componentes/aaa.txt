@@ -1,0 +1,8 @@
+{
+        const categoriasFormateadas = data.categories.map((categoria) => ({
+          id: categoria.id,
+          nombre: categoria.name,
+          hijos: categoria.children_categories || [],
+        }));
+        setCategorias(categoriasFormateadas);
+      }
