@@ -1,7 +1,7 @@
 .categorias-container {
-    width: 10%; /* Ajusta el ancho según tus necesidades */
-    height: 10%; /* Opcional: ajusta la altura según tus necesidades */
-    background-color: #f0f0f0; /* Color de fondo */
+    width: 10%; 
+    height: 10%; 
+    background-color: #f0f0f0; 
     
   }
   
@@ -12,15 +12,15 @@
   }
   
   .menu li {
-    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    margin-bottom: 10px;
   }
   
   .menu li button {
-    margin-right: 5px; /* Espacio entre el botón y el enlace */
+    margin-right: 5px;
   }
   
   .menu li a {
     text-decoration: none;
-    color: #333; /* Color del texto */
+    color: #333;
   }
   

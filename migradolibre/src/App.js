@@ -4,6 +4,7 @@ import "./hojaestilo/api.css"
 import "./App.css"
 import Categorias from "./componentes/apicategoria"
 import Api from "./componentes/api"
+import otro from "./otro"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div className="sidebar">
           <Routes>
             <Route path="/" Component={Categorias}/>
+            <Route path="otro" Component={otro}/>
           </Routes>
         </div>
         <div className="main-content">
