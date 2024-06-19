@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 import { OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { HistoryService } from 'src/app/services/history.service';
 
 @Component({
   selector: 'app-grid-gifs',
@@ -13,7 +14,7 @@ export class GridGifsComponent implements OnInit{
 
   gifs: any[] = []
 
-  constructor(private apiService: ApiService, private sanitizer: DomSanitizer){
+  constructor(private apiService: ApiService, private sanitizer: DomSanitizer, private historyService : HistoryService){
   }
   ngOnInit(): void {
       this.gifs = this.apiService.gifs;
@@ -22,6 +23,8 @@ export class GridGifsComponent implements OnInit{
   search(){
     const info : any = document.querySelector("#infoInput") as HTMLInputElement;
     const infoText = info.value;
+    this.historyService.historial.push(infoText)
+    this.historyService.saveData()
 
     this.apiService.searchGifs(infoText).subscribe(
       (res) => {

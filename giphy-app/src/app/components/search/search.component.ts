@@ -13,7 +13,6 @@ export class SearchComponent {
   constructor(private apiService: ApiService){
     
   }
-
   
 
 }

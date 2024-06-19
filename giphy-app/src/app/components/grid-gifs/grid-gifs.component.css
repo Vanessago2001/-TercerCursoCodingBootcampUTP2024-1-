@@ -54,13 +54,13 @@
   align-items: center;
   border: none;
   border-radius: 0px 10px 10px 0px;
-  background-color: #325FFF;
+  background-color: #FF99D6;
 
 }
 
 #searchButton:hover{
   cursor: pointer;
-  background-color: #87a1ff;
+  background-color: #ed62fa;
 
 }
 

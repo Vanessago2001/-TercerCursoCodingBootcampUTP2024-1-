@@ -1,6 +1,9 @@
 <div class="historyContainer">
   <h1 class="title">History</h1>
   <div class="historyList">
-    <button><h3>Gatos</h3></button>
+    <button *ngFor="let item of historyData">
+        <p>{{item}}</p>
+        <img src="">
+    </button>
   </div>
 </div>
